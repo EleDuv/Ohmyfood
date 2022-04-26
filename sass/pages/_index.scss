@@ -1,0 +1,99 @@
+.top-presentation{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    background-color: $background-color_primary;
+    padding: 50px;
+    h1{
+        margin: 0;
+    }
+    p{
+        font-weight: 250;
+        font-size: 18px;
+    }
+    &_button{
+        color: $color_primary;
+        background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+        border-radius: 35px;
+        padding: 15px 20px;
+    }
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 20px;
+    &_link{
+        text-decoration: none;
+    }
+    &_bloc{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        color: $color_secondary;
+        background-color: $background-color_primary;
+        border-radius: 17px;
+        padding: 15px;
+    }
+    p{
+       position: absolute;
+       left: -12px;
+       bottom: 13px;
+       font-size: 12px;
+       color: $color_primary;
+       background-color:#9356DC;
+       border-radius: 50%;
+       padding: 2px 6px; 
+    }
+    .fa-solid{
+        padding: 0px 18px;
+    }
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: $background-color_primary;
+    gap: 20px;
+    padding: 20px 20px 60px 20px;
+    &_figure{
+        position: relative;
+        height: 200px;
+        background-color: $color_primary;
+        border-radius: 15px;
+        &_img{
+            width: 100%;
+            height: 70%;
+            border-radius: 15px 15px 0px 0px;
+            }
+        &_img_subhead{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            font-size: 12px;
+            background-color: #99e2d0;
+            border-radius: 3px;
+        }
+    }
+    .card_figure_img_subhead{
+        color: #337C6A;
+        font-weight: 400;
+        padding: 8px;
+    }
+    &_figure_bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    h3{
+        padding: 5px 10px 2px 10px;
+    }
+    p{
+        color: $color_secondary;
+        font-weight: 200;
+        padding: 0px 10px;
+    }
+}
+

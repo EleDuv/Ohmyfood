@@ -1,0 +1,24 @@
+.header_menu{
+    text-align: center;
+    &_img{
+        width: 160px;
+        padding: 20px 0px 15px 0px;
+    }
+}
+
+.header_search-bar{
+    background-color: $background-color_secondary;
+    text-align: center;
+    padding: 15px 0px 15px 25px;
+        &_text{
+        border: none;
+        color: $color_secondary;
+        background-color: $background-color_secondary;
+        padding-left: 10px;
+    }
+}input[type=search]:focus{
+
+    border:none;
+}
+
+

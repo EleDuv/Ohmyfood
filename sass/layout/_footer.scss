@@ -1,0 +1,29 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(46, 46, 46);
+    padding: 20px;
+    h5{
+        font-size: 16px;
+        color: $color_primary;
+        padding: 10px 0px;
+    }
+    &_link{
+        display: flex;
+        flex-direction: row;
+        color: $color_primary;
+        gap: 7px;
+    }
+    &_mail{
+        color: $color_primary;
+    }
+    p{
+        font-size: 12px;
+        padding: 5px 0px;
+    }
+    i{
+        display: flex;
+        font-size: 12px;
+        align-items: center;
+    }
+}
