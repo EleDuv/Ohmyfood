@@ -350,9 +350,21 @@ h1, h2 {
   color: black;
 }
 
+.entrees h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(80, 80, 80);
+}
+
+.main_top_title h1 {
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  font-size: 20px;
+}
+
 h3 {
   font-size: 16px;
-  font-weight: 400px;
+  font-weight: 400;
   color: black;
 }
 
@@ -369,11 +381,18 @@ h5 {
 }
 
 .header_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 .header_menu_img {
   width: 160px;
   padding: 20px 0px 15px 0px;
+}
+.header_menu .fa-solid {
+  position: absolute;
+  left: 15px;
 }
 
 .header_search-bar {
@@ -420,6 +439,37 @@ input[type=search]:focus {
   display: flex;
   font-size: 12px;
   align-items: center;
+}
+
+.main_top {
+  background-color: rgb(247, 247, 247);
+}
+.main_top_background {
+  height: 200px;
+}
+.main_top_background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main_top_title {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: -10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(247, 247, 247);
+  border-radius: 15px 15px 0px 0px;
+  padding: 10px 10px 0px 10px;
+}
+
+.entrees {
+  padding: 0px 10px 10px 10px;
+  background-color: rgb(247, 247, 247);
+}
+.entrees_bloc {
+  background-color: white;
 }
 
 .top-presentation {

@@ -1,0 +1,30 @@
+.main_top{
+    background-color: $background-color_primary;
+    &_background{
+    height: 200px;
+        img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+    } 
+    &_title{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $background-color_primary;
+    border-radius: 15px 15px 0px 0px;
+    padding: 10px 10px 0px 10px;
+    }
+}
+
+.entrees{
+    padding: 0px 10px 10px 10px;
+    background-color: $background-color_primary;
+    &_bloc{
+        background-color: $color_primary;
+    }
+}

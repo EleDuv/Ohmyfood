@@ -1,8 +1,15 @@
 .header_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     &_img{
         width: 160px;
         padding: 20px 0px 15px 0px;
+    }
+    .fa-solid{
+        position: absolute;
+        left: 15px;
     }
 }
 
