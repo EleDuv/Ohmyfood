@@ -395,6 +395,22 @@ h5 {
   font-weight: 200;
 }
 
+.main_btn {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(247, 247, 247);
+}
+.main_btn_bloc {
+  color: white;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  border-radius: 35px;
+  border: none;
+  padding: 15px 20px;
+  padding: 15px 40px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
 .header_menu {
   display: flex;
   justify-content: center;
@@ -408,6 +424,7 @@ h5 {
 .header_menu .fa-solid {
   position: absolute;
   left: 15px;
+  top: 27px;
 }
 
 .header_search-bar {
@@ -594,6 +611,7 @@ input[type=search]:focus {
   color: white;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   border-radius: 35px;
+  border: none;
   padding: 15px 20px;
 }
 

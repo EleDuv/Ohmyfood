@@ -1,0 +1,11 @@
+.main_btn{
+    display: flex;
+    justify-content: center;
+    background-color: $background-color_primary;
+    &_bloc{
+    @include button;
+    padding: 15px 40px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    }
+}

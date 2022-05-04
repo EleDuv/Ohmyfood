@@ -13,10 +13,7 @@
         font-size: 18px;
     }
     &_button{
-        color: $color_primary;
-        background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-        border-radius: 35px;
-        padding: 15px 20px;
+        @include button;
     }
 }
 
