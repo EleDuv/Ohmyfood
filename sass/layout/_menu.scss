@@ -24,7 +24,96 @@
 .entrees{
     padding: 0px 10px 10px 10px;
     background-color: $background-color_primary;
+    h2{
+        width: 45px;
+        border-bottom: 3px solid #99E2D0;
+        padding-bottom: 3px;
+    }
+    &_container{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 10px 0px 10px 0px;
+    }
     &_bloc{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
         background-color: $color_primary;
+        border-radius: 15px;
+        padding: 15px 10px 15px 10px;
+        &_bottom{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &-check{
+            display: none;
+        }
     }
 }
+
+.plats{
+    padding: 0px 10px 10px 10px;
+    background-color: $background-color_primary;
+    h2{
+        width: 45px;
+        border-bottom: 3px solid #99E2D0;
+        padding-bottom: 3px;
+    }
+    &_container{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 10px 0px 10px 0px;
+    }
+    &_bloc{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        background-color: $color_primary;
+        border-radius: 15px;
+        padding: 15px 10px 15px 10px;
+        &_bottom{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &-check{
+            display: none;
+        }
+    }
+}
+
+.desserts{
+    padding: 0px 10px 10px 10px;
+    background-color: $background-color_primary;
+    h2{
+        width: 45px;
+        border-bottom: 3px solid #99E2D0;
+        padding-bottom: 3px;
+    }
+    &_container{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 10px 0px 10px 0px;
+    }
+    &_bloc{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        background-color: $color_primary;
+        border-radius: 15px;
+        padding: 15px 10px 15px 10px;
+        &_bottom{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &-check{
+            display: none;
+        }
+    }
+}
+

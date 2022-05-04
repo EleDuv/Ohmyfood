@@ -353,7 +353,7 @@ h1, h2 {
 .entrees h2 {
   font-size: 18px;
   font-weight: 400;
-  color: rgb(80, 80, 80);
+  color: rgb(94, 94, 94);
 }
 
 .main_top_title h1 {
@@ -378,6 +378,21 @@ img {
 
 h5 {
   font-family: "Shrikhand", cursive;
+}
+
+.entrees p {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.plats p {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.desserts p {
+  font-size: 14px;
+  font-weight: 200;
 }
 
 .header_menu {
@@ -468,8 +483,96 @@ input[type=search]:focus {
   padding: 0px 10px 10px 10px;
   background-color: rgb(247, 247, 247);
 }
+.entrees h2 {
+  width: 45px;
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 3px;
+}
+.entrees_container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 10px 0px 10px 0px;
+}
 .entrees_bloc {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
   background-color: white;
+  border-radius: 15px;
+  padding: 15px 10px 15px 10px;
+}
+.entrees_bloc_bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.entrees_bloc-check {
+  display: none;
+}
+
+.plats {
+  padding: 0px 10px 10px 10px;
+  background-color: rgb(247, 247, 247);
+}
+.plats h2 {
+  width: 45px;
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 3px;
+}
+.plats_container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 10px 0px 10px 0px;
+}
+.plats_bloc {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px 10px 15px 10px;
+}
+.plats_bloc_bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.plats_bloc-check {
+  display: none;
+}
+
+.desserts {
+  padding: 0px 10px 10px 10px;
+  background-color: rgb(247, 247, 247);
+}
+.desserts h2 {
+  width: 45px;
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 3px;
+}
+.desserts_container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 10px 0px 10px 0px;
+}
+.desserts_bloc {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px 10px 15px 10px;
+}
+.desserts_bloc_bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.desserts_bloc-check {
+  display: none;
 }
 
 .top-presentation {
