@@ -20,13 +20,11 @@
     padding: 15px 0px 15px 25px;
         &_text{
         border: none;
+        outline: none;
         color: $color_secondary;
         background-color: $background-color_secondary;
         padding-left: 10px;
+    
     }
-}input[type=search]:focus{
-
-    border:none;
 }
-
 

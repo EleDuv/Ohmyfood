@@ -434,13 +434,10 @@ h5 {
 }
 .header_search-bar_text {
   border: none;
+  outline: none;
   color: black;
   background-color: rgb(231, 231, 231);
   padding-left: 10px;
-}
-
-input[type=search]:focus {
-  border: none;
 }
 
 .footer {
