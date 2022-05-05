@@ -1,7 +1,13 @@
 @mixin button{
     color: $color_primary;
-        background: $color_button;
-        border-radius: 35px;
-        border: none;
-        padding: 15px 20px;
+    background: $color_button;
+    border-radius: 35px;
+    border: none;
+    box-shadow: 7px 7px 10px rgb(181 181 181);
+    transition: all 450ms;
+    padding: 15px 20px;
+    &:hover{
+        box-shadow: 10px 10px 10px rgb(161 161 161);
+        opacity: 0.8;
+    }
 }
