@@ -701,4 +701,26 @@ h5 {
   padding: 0px 10px;
 }
 
+.card_icon {
+  position: relative;
+  margin: 15px;
+}
+.card_icon .far {
+  position: absolute;
+  right: 1px;
+}
+.card_icon .fas {
+  position: absolute;
+  right: 1px;
+  opacity: 0;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  color: transparent;
+  color: transparent;
+  transition: opacity 350ms;
+}
+.card_icon .fas:hover {
+  opacity: 1;
+}
+
 /*# sourceMappingURL=style.css.map */
