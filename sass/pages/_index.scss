@@ -115,3 +115,32 @@
         }
     }
 }
+
+.loader{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-top: 20px solid #FF79DA;
+    border-right: 20px solid #9356DC;
+    border-bottom: 20px solid $background-color_secondary;
+    border-left: 20px solid #99e2d0;
+    animation: loading-spinner 3000ms linear;
+}
+
+@keyframes loading-spinner{
+    0%{
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(360deg);
+    }
+}
