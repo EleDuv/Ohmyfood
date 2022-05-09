@@ -95,6 +95,8 @@
 }
 
 .card_icon{
+    position: relative;
+    margin: 15px;
     @include heart;
 }
 
