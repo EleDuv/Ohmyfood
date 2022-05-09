@@ -514,8 +514,9 @@ h5 {
 }
 
 .entrees {
-  padding: 0px 10px 10px 10px;
+  padding: 10px;
   background-color: rgb(247, 247, 247);
+  animation: menu_apparition 1000ms linear;
 }
 .entrees h2 {
   font-size: 18px;
@@ -551,6 +552,8 @@ h5 {
 .plats {
   padding: 0px 10px 10px 10px;
   background-color: rgb(247, 247, 247);
+  animation: menu_apparition 1000ms linear 400ms;
+  animation-fill-mode: backwards;
 }
 .plats h2 {
   font-size: 18px;
@@ -586,6 +589,8 @@ h5 {
 .desserts {
   padding: 0px 10px 10px 10px;
   background-color: rgb(247, 247, 247);
+  animation: menu_apparition 1000ms linear 800ms;
+  animation-fill-mode: backwards;
 }
 .desserts h2 {
   font-size: 18px;
@@ -618,6 +623,14 @@ h5 {
   display: none;
 }
 
+@keyframes menu_apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .top-presentation {
   display: flex;
   flex-direction: column;

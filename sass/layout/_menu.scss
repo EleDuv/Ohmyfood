@@ -26,8 +26,9 @@
 }
 
 .entrees{
-    padding: 0px 10px 10px 10px;
+    padding: 10px;
     background-color: $background-color_primary;
+    animation: menu_apparition 1000ms linear;
     h2{
         @include menu_title;
     }
@@ -58,6 +59,8 @@
 .plats{
     padding: 0px 10px 10px 10px;
     background-color: $background-color_primary;
+    animation: menu_apparition 1000ms linear 400ms;
+    animation-fill-mode: backwards;
     h2{
         @include menu_title;
     }
@@ -88,6 +91,8 @@
 .desserts{
     padding: 0px 10px 10px 10px;
     background-color: $background-color_primary;
+    animation: menu_apparition 1000ms linear 800ms;
+    animation-fill-mode: backwards;
     h2{
         @include menu_title;
     }
@@ -115,3 +120,11 @@
     }
 }
 
+@keyframes menu_apparition{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
