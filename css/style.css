@@ -497,6 +497,25 @@ h5 {
   background-color: rgb(247, 247, 247);
   border-radius: 15px 15px 0px 0px;
   padding: 10px 10px 0px 10px;
+  position: relative;
+  margin: 15px;
+}
+.main_top_title .far {
+  position: absolute;
+  right: 1px;
+}
+.main_top_title .fas {
+  position: absolute;
+  right: 1px;
+  opacity: 0;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  color: transparent;
+  color: transparent;
+  transition: opacity 350ms;
+}
+.main_top_title .fas:hover {
+  opacity: 1;
 }
 
 .entrees {
@@ -733,6 +752,7 @@ h5 {
   bottom: 0;
   left: 0;
   right: 0;
+  opacity: 0;
   z-index: 1;
   border-top: 20px solid #FF79DA;
   border-right: 20px solid #9356DC;

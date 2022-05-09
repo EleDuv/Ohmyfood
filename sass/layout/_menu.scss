@@ -18,6 +18,7 @@
     background-color: $background-color_primary;
     border-radius: 15px 15px 0px 0px;
     padding: 10px 10px 0px 10px;
+    @include heart;
     }
 }
 

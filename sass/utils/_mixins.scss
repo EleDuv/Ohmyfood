@@ -11,3 +11,25 @@
         opacity: 0.8;
     }
 }
+
+@mixin heart{
+    position: relative;
+    margin: 15px;
+    & .far{
+        position: absolute;
+        right: 1px;
+    }
+    & .fas{
+        position: absolute;
+        right: 1px;
+        opacity: 0;
+        background: $color_button;
+        -webkit-background-clip: text;
+        color: transparent;
+        color: transparent;
+        transition: opacity 350ms;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
