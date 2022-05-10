@@ -704,8 +704,10 @@ img {
   white-space: nowrap;
 }
 
-.bloc_page {
+.bloc_page_index {
   background-color: white;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .top-presentation {
@@ -785,9 +787,11 @@ img {
 }
 .card_figure {
   position: relative;
+  max-width: 377px;
   height: 200px;
   background-color: white;
   border-radius: 15px;
+  margin: auto;
 }
 .card_figure_img {
   width: 100%;
@@ -861,7 +865,7 @@ img {
   border-left: 20px solid #99e2d0;
 }
 
-@media screen and (min-width: 814px) and (max-width: 1200px) {
+@media screen and (min-width: 814px) {
   .intro {
     display: flex;
     flex-direction: row;
@@ -884,6 +888,22 @@ img {
     min-width: 254px;
     display: flex;
     flex-direction: row;
+  }
+}
+@media screen and (min-width: 814px) {
+  .card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card h2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .card_figure {
+    width: 377px;
   }
 }
 
