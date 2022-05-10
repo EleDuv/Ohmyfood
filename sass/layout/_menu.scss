@@ -25,10 +25,10 @@
     }
 }
 
-.entrees{
+.entrees, .plats, .desserts{
     padding: 10px;
     background-color: $background-color_primary;
-    animation: menu_apparition 1000ms linear;
+    animation: menu_apparition 1000ms ease-in-out;
     h2{
         @include menu_title;
     }
@@ -40,91 +40,130 @@
     }
     &_bloc{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        height: 55px;
+        justify-content: space-between;
         gap: 4px;
+        overflow: hidden;
         background-color: $color_primary;
         border-radius: 15px;
-        padding: 15px 10px 15px 10px;
+        &_text{
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 90%;
+            gap: 4px;
+            padding: 8px;
+        }
         &_bottom{
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            align-items: end;
+            padding: 8px;
         }
         &-check{
-            display: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 10px;
+            background-color: #99E2D0;
+            opacity: 0;
+            width: 65px;
+            height: 55px;
+            border-radius: 0px 15px 15px 0px;
+            .fa-check{
+                font-size: 12PX;
+                background-color: white;
+                color: #99E2D0;
+                padding: 4PX;
+                border-radius: 50%;
+            }
         }
     }
 }
 
-.plats{
-    padding: 0px 10px 10px 10px;
-    background-color: $background-color_primary;
-    animation: menu_apparition 1000ms linear 400ms;
-    animation-fill-mode: backwards;
-    h2{
-        @include menu_title;
-    }
-    &_container{
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        margin: 10px 0px 10px 0px;
-    }
-    &_bloc{
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-        background-color: $color_primary;
-        border-radius: 15px;
-        padding: 15px 10px 15px 10px;
-        &_bottom{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        &-check{
-            display: none;
-        }
-    }
+.entrees_bloc:hover .entrees_bloc_bottom{
+    transform: translateX(-60px);
+    transition: all 1500ms linear;
 }
 
-.desserts{
-    padding: 0px 10px 10px 10px;
-    background-color: $background-color_primary;
-    animation: menu_apparition 1000ms linear 800ms;
-    animation-fill-mode: backwards;
-    h2{
-        @include menu_title;
-    }
-    &_container{
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        margin: 10px 0px 10px 0px;
-    }
-    &_bloc{
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-        background-color: $color_primary;
-        border-radius: 15px;
-        padding: 15px 10px 15px 10px;
-        &_bottom{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        &-check{
-            display: none;
-        }
-    }
+.entrees_bloc:hover .entrees_bloc-check{
+    animation: check_apparition 1500ms linear;
+    animation-fill-mode: forwards;
 }
+
+.entrees_bloc:hover .fa-solid{
+    animation: icon_rotation 1500ms linear;
+}
+
+.plats_bloc:hover .plats_bloc_bottom{
+    transform: translateX(-60px);
+    transition: all 1500ms linear;
+}
+
+.plats_bloc:hover .plats_bloc-check{
+    animation: check_apparition 1500ms linear;
+    animation-fill-mode: forwards;
+}
+ 
+.plats_bloc:hover .fa-solid{
+    animation: icon_rotation 1500ms linear;
+}
+
+.desserts_bloc:hover .desserts_bloc_bottom{
+    transform: translateX(-60px);
+    transition: all 1500ms linear;
+}
+
+.desserts_bloc:hover .desserts_bloc-check{
+    animation: check_apparition 1500ms linear;
+    animation-fill-mode: forwards;
+}
+ 
+.desserts_bloc:hover .fa-solid{
+    animation: icon_rotation 1500ms linear;
+}
+
+   
 
 @keyframes menu_apparition{
     0%{
         opacity: 0;
     }
+    20%{
+        opacity: 0;
+    }
     100%{
         opacity: 1;
     }
+}
+
+@keyframes check_apparition{
+    0%{
+        opacity: 0;
+        width: 0%;
+    }
+    100%{
+        opacity: 1;
+        width: 65px;
+    }
+}
+
+@keyframes icon_rotation{
+    0%{
+        transform: rotate(0turn);
+    }
+    100%{
+        transform: rotate(1turn);
+    }
+}
+
+@mixin test{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.entrees_bloc_text p{
+    @include test;
 }

@@ -24,29 +24,26 @@ h3{
     color: black;
 }
 
+h5{
+    font-family: 'Shrikhand', cursive;
+}
+
 a{
     text-decoration: none;
+    color: black;
 }
 
 img{
     object-fit: cover;
 }
 
-h5{
-    font-family: 'Shrikhand', cursive;
-}
-
-.entrees p{
-    font-size: 14px;
+.entrees, .plats, .desserts p{
+    font-size: 13px;
     font-weight: 200;
 }
 
-.plats p{
-    font-size: 14px;
-    font-weight: 200;
-}
-
-.desserts p{
-    font-size: 14px;
-    font-weight: 200;
+.entrees, .plats, .desserts{
+    &_bloc_bottom p{
+        font-weight: 400;
+    }
 }
