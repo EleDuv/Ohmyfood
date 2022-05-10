@@ -28,7 +28,6 @@
 .entrees, .plats, .desserts{
     padding: 10px;
     background-color: $background-color_primary;
-    animation: menu_apparition 1000ms ease-in-out;
     h2{
         @include menu_title;
     }
@@ -82,88 +81,13 @@
     }
 }
 
-.entrees_bloc:hover .entrees_bloc_bottom{
-    transform: translateX(-60px);
-    transition: all 1500ms linear;
-}
-
-.entrees_bloc:hover .entrees_bloc-check{
-    animation: check_apparition 1500ms linear;
-    animation-fill-mode: forwards;
-}
-
-.entrees_bloc:hover .fa-solid{
-    animation: icon_rotation 1500ms linear;
-}
-
-.plats_bloc:hover .plats_bloc_bottom{
-    transform: translateX(-60px);
-    transition: all 1500ms linear;
-}
-
-.plats_bloc:hover .plats_bloc-check{
-    animation: check_apparition 1500ms linear;
-    animation-fill-mode: forwards;
-}
- 
-.plats_bloc:hover .fa-solid{
-    animation: icon_rotation 1500ms linear;
-}
-
-.desserts_bloc:hover .desserts_bloc_bottom{
-    transform: translateX(-60px);
-    transition: all 1500ms linear;
-}
-
-.desserts_bloc:hover .desserts_bloc-check{
-    animation: check_apparition 1500ms linear;
-    animation-fill-mode: forwards;
-}
- 
-.desserts_bloc:hover .fa-solid{
-    animation: icon_rotation 1500ms linear;
-}
-
-   
-
-@keyframes menu_apparition{
-    0%{
-        opacity: 0;
-    }
-    20%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
-@keyframes check_apparition{
-    0%{
-        opacity: 0;
-        width: 0%;
-    }
-    100%{
-        opacity: 1;
-        width: 65px;
-    }
-}
-
-@keyframes icon_rotation{
-    0%{
-        transform: rotate(0turn);
-    }
-    100%{
-        transform: rotate(1turn);
-    }
-}
-
 @mixin test{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
-.entrees_bloc_text p{
+.entrees_bloc_text {
     @include test;
 }
+

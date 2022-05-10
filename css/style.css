@@ -384,6 +384,120 @@ img {
   font-weight: 400;
 }
 
+@keyframes background_bloc_page {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.bloc_page_index {
+  animation: background_bloc_page 3000ms ease-in-out;
+}
+
+@keyframes loading-spinner {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(360deg);
+  }
+}
+.loader {
+  animation: loading-spinner 3000ms linear;
+}
+
+@keyframes menu_apparition {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.entrees {
+  animation: menu_apparition 1000ms ease-in-out;
+}
+
+.plats {
+  animation: menu_apparition 1000ms ease-in-out 100ms;
+  animation-fill-mode: backwards;
+}
+
+.desserts {
+  animation: menu_apparition 1000ms ease-in-out 150ms;
+  animation-fill-mode: backwards;
+}
+
+@keyframes check_apparition {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  100% {
+    opacity: 1;
+    width: 65px;
+  }
+}
+@keyframes icon_rotation {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.entrees_bloc:hover .entrees_bloc_bottom {
+  transform: translateX(-60px);
+  transition: all 1500ms linear;
+}
+
+.entrees_bloc:hover .entrees_bloc-check {
+  animation: check_apparition 1500ms linear;
+  animation-fill-mode: forwards;
+}
+
+.entrees_bloc:hover .fa-solid {
+  animation: icon_rotation 1500ms linear;
+}
+
+.plats_bloc:hover .plats_bloc_bottom {
+  transform: translateX(-60px);
+  transition: all 1500ms linear;
+}
+
+.plats_bloc:hover .plats_bloc-check {
+  animation: check_apparition 1500ms linear;
+  animation-fill-mode: forwards;
+}
+
+.plats_bloc:hover .fa-solid {
+  animation: icon_rotation 1500ms linear;
+}
+
+.desserts_bloc:hover .desserts_bloc_bottom {
+  transform: translateX(-60px);
+  transition: all 1500ms linear;
+}
+
+.desserts_bloc:hover .desserts_bloc-check {
+  animation: check_apparition 1500ms linear;
+  animation-fill-mode: forwards;
+}
+
+.desserts_bloc:hover .fa-solid {
+  animation: icon_rotation 1500ms linear;
+}
+
 .main_btn {
   display: flex;
   justify-content: center;
@@ -402,6 +516,22 @@ img {
   margin-bottom: 40px;
 }
 .main_btn_bloc:hover {
+  box-shadow: 10px 10px 10px rgb(161, 161, 161);
+  opacity: 0.8;
+}
+
+.top-presentation_button {
+  color: white;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  border-radius: 35px;
+  border: none;
+  box-shadow: 7px 7px 10px rgb(181, 181, 181);
+  transition: all 450ms;
+  padding: 15px 20px;
+  width: 230px;
+  margin: auto;
+}
+.top-presentation_button:hover {
   box-shadow: 10px 10px 10px rgb(161, 161, 161);
   opacity: 0.8;
 }
@@ -498,7 +628,6 @@ img {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   color: transparent;
-  color: transparent;
   transition: opacity 350ms;
 }
 .main_top_title .fas:hover {
@@ -511,7 +640,6 @@ img {
 .entrees, .plats, .desserts {
   padding: 10px;
   background-color: rgb(247, 247, 247);
-  animation: menu_apparition 1000ms ease-in-out;
 }
 .entrees h2, .plats h2, .desserts h2 {
   font-size: 18px;
@@ -570,81 +698,14 @@ img {
   border-radius: 50%;
 }
 
-.entrees_bloc:hover .entrees_bloc_bottom {
-  transform: translateX(-60px);
-  transition: all 1500ms linear;
-}
-
-.entrees_bloc:hover .entrees_bloc-check {
-  animation: check_apparition 1500ms linear;
-  animation-fill-mode: forwards;
-}
-
-.entrees_bloc:hover .fa-solid {
-  animation: icon_rotation 1500ms linear;
-}
-
-.plats_bloc:hover .plats_bloc_bottom {
-  transform: translateX(-60px);
-  transition: all 1500ms linear;
-}
-
-.plats_bloc:hover .plats_bloc-check {
-  animation: check_apparition 1500ms linear;
-  animation-fill-mode: forwards;
-}
-
-.plats_bloc:hover .fa-solid {
-  animation: icon_rotation 1500ms linear;
-}
-
-.desserts_bloc:hover .desserts_bloc_bottom {
-  transform: translateX(-60px);
-  transition: all 1500ms linear;
-}
-
-.desserts_bloc:hover .desserts_bloc-check {
-  animation: check_apparition 1500ms linear;
-  animation-fill-mode: forwards;
-}
-
-.desserts_bloc:hover .fa-solid {
-  animation: icon_rotation 1500ms linear;
-}
-
-@keyframes menu_apparition {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes check_apparition {
-  0% {
-    opacity: 0;
-    width: 0%;
-  }
-  100% {
-    opacity: 1;
-    width: 65px;
-  }
-}
-@keyframes icon_rotation {
-  0% {
-    transform: rotate(0turn);
-  }
-  100% {
-    transform: rotate(1turn);
-  }
-}
-.entrees_bloc_text p {
+.entrees_bloc_text {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.bloc_page {
+  background-color: white;
 }
 
 .top-presentation {
@@ -682,19 +743,26 @@ img {
   gap: 20px;
   padding: 50px 20px;
 }
-.intro_link {
+.intro_all {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.intro_all_link {
   text-decoration: none;
 }
-.intro_bloc {
+.intro_all_bloc {
   display: flex;
   flex-direction: row;
   position: relative;
   color: black;
   background-color: rgb(247, 247, 247);
   border-radius: 17px;
+  width: 254px;
+  margin: auto;
   padding: 15px;
 }
-.intro p {
+.intro_all p {
   position: absolute;
   left: -12px;
   bottom: 13px;
@@ -704,7 +772,7 @@ img {
   border-radius: 50%;
   padding: 2px 6px;
 }
-.intro .fa-solid {
+.intro_all .fa-solid {
   padding: 0px 18px;
 }
 
@@ -768,7 +836,6 @@ img {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   color: transparent;
-  color: transparent;
   transition: opacity 350ms;
 }
 .card_icon .fas:hover {
@@ -776,6 +843,7 @@ img {
 }
 
 .loader {
+  background-color: white;
   border-radius: 50%;
   width: 200px;
   height: 200px;
@@ -791,17 +859,31 @@ img {
   border-right: 20px solid #9356DC;
   border-bottom: 20px solid rgb(231, 231, 231);
   border-left: 20px solid #99e2d0;
-  animation: loading-spinner 3000ms linear;
 }
 
-@keyframes loading-spinner {
-  0% {
-    opacity: 1;
-    transform: rotate(0deg);
+@media screen and (min-width: 814px) and (max-width: 1200px) {
+  .intro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-  100% {
-    opacity: 0;
-    transform: rotate(360deg);
+  .intro h2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+  }
+  .intro_all {
+    display: flex;
+    flex-direction: row;
+    gap: 19px;
+    margin: auto;
+  }
+  .intro_all_bloc {
+    width: 31%;
+    min-width: 254px;
+    display: flex;
+    flex-direction: row;
   }
 }
 

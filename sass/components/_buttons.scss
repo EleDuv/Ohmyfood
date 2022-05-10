@@ -9,3 +9,11 @@
     margin-bottom: 40px;
     }
 }
+
+.top-presentation_button{
+    @include button;
+    width: 230px;
+    margin: auto;
+}
+
+    
