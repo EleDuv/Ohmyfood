@@ -1,3 +1,9 @@
+.bloc_page_menu{
+    background-color: $background-color_primary;
+    max-width: 1440px;
+    margin: auto;
+}
+
 .main_top{
     background-color: $background-color_primary;
     &_background{
@@ -17,7 +23,7 @@
         align-items: center;
         background-color: $background-color_primary;
         border-radius: 15px 15px 0px 0px;
-        padding: 10px 10px 0px 10px;
+        padding: 20px;
         @include heart;
         & i{
             padding: 15px;
@@ -26,6 +32,10 @@
 }
 
 .entrees, .plats, .desserts{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    margin: auto;
     padding: 10px;
     background-color: $background-color_primary;
     h2{
@@ -34,13 +44,17 @@
     &_container{
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 15px;
         margin: 10px 0px 10px 0px;
     }
     &_bloc{
         display: flex;
         flex-direction: row;
+        position: relative;
         height: 55px;
+        width: 310px;
+        max-width: 342px;
         justify-content: space-between;
         gap: 4px;
         overflow: hidden;
@@ -64,7 +78,7 @@
             justify-content: center;
             align-items: center;
             position: absolute;
-            right: 10px;
+            right: 0px;
             background-color: #99E2D0;
             opacity: 0;
             width: 65px;
@@ -91,4 +105,12 @@
     @include test;
     width: 100%;
 }
+
+@media screen and (min-width: 992px){
+    .center{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
 

@@ -70,7 +70,6 @@
     padding: 20px 20px 60px 20px;
     &_figure{
         position: relative;
-        width: 377px;
         max-width: 377px;
         height: 200px;
         background-color: $color_primary;
@@ -167,6 +166,9 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        &_figure{
+        width: 377px;
+        }
         h2{
             display: flex;
             width: 100%;
