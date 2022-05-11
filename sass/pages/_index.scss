@@ -1,6 +1,6 @@
 .bloc_page_index{
     background-color: white;
-    max-width: 1200px;
+    max-width: 1440px;
     margin: auto;
 }
 
@@ -70,6 +70,7 @@
     padding: 20px 20px 60px 20px;
     &_figure{
         position: relative;
+        width: 377px;
         max-width: 377px;
         height: 200px;
         background-color: $color_primary;
@@ -171,8 +172,21 @@
             width: 100%;
             justify-content: center;
         }
-        &_figure{
-            width: 377px;
+    }
+}
+
+@media screen and (min-width: 1210px) and (max-width: 1440px){
+    .card{
+        display: flex;
+        row-gap: 30px;
+        &_link{
+            width: 33%;
         }
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .card_figure{
+        width: 335px;
     }
 }

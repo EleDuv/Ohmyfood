@@ -702,11 +702,12 @@ img {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  width: 100%;
 }
 
 .bloc_page_index {
   background-color: white;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: auto;
 }
 
@@ -787,6 +788,7 @@ img {
 }
 .card_figure {
   position: relative;
+  width: 377px;
   max-width: 377px;
   height: 200px;
   background-color: white;
@@ -902,8 +904,19 @@ img {
     width: 100%;
     justify-content: center;
   }
+}
+@media screen and (min-width: 1210px) and (max-width: 1440px) {
+  .card {
+    display: flex;
+    row-gap: 30px;
+  }
+  .card_link {
+    width: 33%;
+  }
+}
+@media screen and (min-width: 1440px) {
   .card_figure {
-    width: 377px;
+    width: 335px;
   }
 }
 
