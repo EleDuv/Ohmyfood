@@ -37,12 +37,12 @@ img{
     object-fit: cover;
 }
 
-.entrees, .plats, .desserts p{
-    font-size: 13px;
-    font-weight: 200;
-}
 
 .entrees, .plats, .desserts{
+    p{
+        font-size: 13px;
+        font-weight: 200;
+    }
     &_bloc_bottom p{
         font-weight: 400;
     }

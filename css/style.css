@@ -375,15 +375,15 @@ img {
   object-fit: cover;
 }
 
-.entrees, .plats, .desserts p {
+.entrees p, .plats p, .desserts p {
   font-size: 13px;
   font-weight: 200;
 }
-
 .entrees_bloc_bottom p, .plats_bloc_bottom p, .desserts_bloc_bottom p {
   font-weight: 400;
 }
 
+/* Animation du loader */
 @keyframes background_bloc_page {
   0% {
     opacity: 0;
@@ -413,6 +413,8 @@ img {
   animation: loading-spinner 3000ms linear;
 }
 
+/* Fin de l'animation du loader */
+/* Animation des liens du bloc "fonctionnement" */
 .intro_all_link:hover .intro_all_bloc {
   background-color: rgb(242, 236, 250);
 }
@@ -420,6 +422,8 @@ img {
   color: #9356DC;
 }
 
+/* Fin de l'animation des liens du bloc "fonctionnement" */
+/* Animation de l'apparition progressive des blocs de menus */
 @keyframes menu_apparition {
   0% {
     opacity: 0;
@@ -445,6 +449,8 @@ img {
   animation-fill-mode: backwards;
 }
 
+/* Fin de l'animation de l'apparition progressive des blocs des pages menus */
+/* Animation de la coche des menus */
 @keyframes check_apparition {
   0% {
     opacity: 0;
@@ -520,6 +526,7 @@ img {
   transition: width 1500ms;
 }
 
+/* Fin de l'animation de la coche des menus */
 .main_btn {
   display: flex;
   justify-content: center;
@@ -837,7 +844,7 @@ img {
   flex-direction: column;
   background-color: rgb(247, 247, 247);
   gap: 20px;
-  padding: 20px 20px 60px 20px;
+  padding: 40px 20px 80px 20px;
 }
 .card_figure {
   position: relative;
