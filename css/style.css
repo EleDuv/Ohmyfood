@@ -700,6 +700,7 @@ img {
   gap: 4px;
   overflow: hidden;
   background-color: white;
+  box-shadow: 7px 7px 10px rgb(227, 227, 227);
   border-radius: 15px;
 }
 .entrees_bloc_text, .plats_bloc_text, .desserts_bloc_text {
