@@ -63,9 +63,22 @@
         &_text{
             display: flex;
             flex-direction: column;
-            flex: 1 1 90%;
+            width: 90%;
             gap: 4px;
             padding: 8px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            h3{
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            p{
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
         }
         &_bottom{
             display: flex;
@@ -93,17 +106,6 @@
             }
         }
     }
-}
-
-@mixin test{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.entrees_bloc_text {
-    @include test;
-    width: 100%;
 }
 
 @media screen and (min-width: 992px){

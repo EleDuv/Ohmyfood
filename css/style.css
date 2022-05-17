@@ -357,7 +357,7 @@ h1, h2 {
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   color: black;
 }
@@ -411,6 +411,10 @@ img {
 }
 .loader {
   animation: loading-spinner 3000ms linear;
+}
+
+.intro_all_link:hover .intro_all_bloc {
+  background-color: rgb(230, 223, 240);
 }
 
 @keyframes menu_apparition {
@@ -496,6 +500,21 @@ img {
 
 .desserts_bloc:hover .fa-solid {
   animation: icon_rotation 1500ms linear;
+}
+
+.entrees_bloc:hover .entrees_bloc_text {
+  width: 70%;
+  transition: width 1500ms;
+}
+
+.plats_bloc:hover .plats_bloc_text {
+  width: 70%;
+  transition: width 1500ms;
+}
+
+.desserts_bloc:hover .desserts_bloc_text {
+  width: 70%;
+  transition: width 1500ms;
 }
 
 .main_btn {
@@ -683,9 +702,22 @@ img {
 .entrees_bloc_text, .plats_bloc_text, .desserts_bloc_text {
   display: flex;
   flex-direction: column;
-  flex: 1 1 90%;
+  width: 90%;
   gap: 4px;
   padding: 8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.entrees_bloc_text h3, .plats_bloc_text h3, .desserts_bloc_text h3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.entrees_bloc_text p, .plats_bloc_text p, .desserts_bloc_text p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .entrees_bloc_bottom, .plats_bloc_bottom, .desserts_bloc_bottom {
   display: flex;
@@ -711,13 +743,6 @@ img {
   color: #99E2D0;
   padding: 4PX;
   border-radius: 50%;
-}
-
-.entrees_bloc_text {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 100%;
 }
 
 @media screen and (min-width: 992px) {
@@ -770,7 +795,7 @@ img {
 .intro_all {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 16px;
 }
 .intro_all_link {
   text-decoration: none;
@@ -782,14 +807,14 @@ img {
   color: black;
   background-color: rgb(247, 247, 247);
   border-radius: 17px;
-  width: 254px;
+  width: 300px;
   margin: auto;
-  padding: 15px;
+  padding: 19px;
 }
 .intro_all p {
   position: absolute;
   left: -12px;
-  bottom: 13px;
+  bottom: 24px;
   font-size: 12px;
   color: white;
   background-color: #9356DC;
@@ -907,12 +932,11 @@ img {
   }
   .intro_all_bloc {
     width: 31%;
-    min-width: 254px;
+    min-width: 251px;
     display: flex;
     flex-direction: row;
   }
-}
-@media screen and (min-width: 814px) {
+
   .card {
     display: flex;
     flex-direction: row;
@@ -936,10 +960,20 @@ img {
   .card_link {
     width: 33%;
   }
+
+  .intro_all {
+    display: flex;
+    gap: 37px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .card_figure {
     width: 335px;
+  }
+
+  .intro_all {
+    display: flex;
+    gap: 37px;
   }
 }
 
