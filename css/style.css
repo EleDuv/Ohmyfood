@@ -415,6 +415,9 @@ img {
 
 /* Fin de l'animation du loader */
 /* Animation des liens du bloc "fonctionnement" */
+.intro_all_link:hover {
+  transition: all, 450ms;
+}
 .intro_all_link:hover .intro_all_bloc {
   background-color: rgb(242, 236, 250);
 }
@@ -821,9 +824,10 @@ img {
   background-color: rgb(247, 247, 247);
   box-shadow: 7px 7px 10px rgb(227, 227, 227);
   border-radius: 17px;
-  width: 300px;
+  width: 294px;
   margin: auto;
   padding: 19px;
+  transition: all, 450ms;
 }
 .intro_all p {
   position: absolute;
@@ -837,6 +841,7 @@ img {
 }
 .intro_all .fa-solid {
   padding: 0px 18px;
+  transition: all, 450ms;
 }
 
 .card {

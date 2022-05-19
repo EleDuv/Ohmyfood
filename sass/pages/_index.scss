@@ -43,9 +43,10 @@
             background-color: $background-color_primary;
             box-shadow: 7px 7px 10px rgb(227, 227, 227);
             border-radius: 17px;
-            width: 300px;
+            width: 294px;
             margin: auto;
             padding: 19px;
+            transition: all, 450ms;
         }
         p{
         position: absolute;
@@ -59,6 +60,7 @@
         }
         .fa-solid{
             padding: 0px 18px;
+            transition: all, 450ms;
         }
     }
 }
