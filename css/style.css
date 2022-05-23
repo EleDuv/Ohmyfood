@@ -473,54 +473,45 @@ img {
   transform: translateX(-60px);
   transition: all 1500ms linear;
 }
-
 .entrees_bloc:hover .entrees_bloc-check {
   animation: check_apparition 1500ms linear;
   animation-fill-mode: forwards;
 }
-
 .entrees_bloc:hover .fa-solid {
   animation: icon_rotation 1500ms linear;
+}
+.entrees_bloc:hover .entrees_bloc_text {
+  width: 70%;
+  transition: width 1500ms;
 }
 
 .plats_bloc:hover .plats_bloc_bottom {
   transform: translateX(-60px);
   transition: all 1500ms linear;
 }
-
 .plats_bloc:hover .plats_bloc-check {
   animation: check_apparition 1500ms linear;
   animation-fill-mode: forwards;
 }
-
 .plats_bloc:hover .fa-solid {
   animation: icon_rotation 1500ms linear;
+}
+.plats_bloc:hover .plats_bloc_text {
+  width: 70%;
+  transition: width 1500ms;
 }
 
 .desserts_bloc:hover .desserts_bloc_bottom {
   transform: translateX(-60px);
   transition: all 1500ms linear;
 }
-
 .desserts_bloc:hover .desserts_bloc-check {
   animation: check_apparition 1500ms linear;
   animation-fill-mode: forwards;
 }
-
 .desserts_bloc:hover .fa-solid {
   animation: icon_rotation 1500ms linear;
 }
-
-.entrees_bloc:hover .entrees_bloc_text {
-  width: 70%;
-  transition: width 1500ms;
-}
-
-.plats_bloc:hover .plats_bloc_text {
-  width: 70%;
-  transition: width 1500ms;
-}
-
 .desserts_bloc:hover .desserts_bloc_text {
   width: 70%;
   transition: width 1500ms;
