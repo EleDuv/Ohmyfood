@@ -1,0 +1,156 @@
+/* Animation du loader */
+
+@keyframes background_bloc_page{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.bloc_page_index{
+    animation: background_bloc_page 3000ms ease-in-out;
+}
+
+@keyframes loading-spinner{
+    0%{
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(360deg);
+    }
+}
+
+.loader{
+    animation: loading-spinner 3000ms linear;
+}
+
+/* Fin de l'animation du loader */
+
+/* Animation des liens du bloc "fonctionnement" */
+
+.intro_all_link:hover{
+    .intro_all_bloc{
+        background-color: rgb(242, 236, 250);
+    }
+    .fa-solid{
+        color: #9356DC;
+    }
+}
+
+/* Fin de l'animation des liens du bloc "fonctionnement" */
+
+/* Animation de l'apparition progressive des blocs de menus */
+
+@keyframes menu_apparition{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.entrees{
+    animation: menu_apparition 1000ms ease-in-out;
+}
+
+.plats{
+    animation: menu_apparition 1000ms ease-in-out 100ms;
+    animation-fill-mode: backwards;
+}
+
+.desserts{
+    animation: menu_apparition 1000ms ease-in-out 150ms;
+    animation-fill-mode: backwards;
+}
+
+/* Fin de l'animation de l'apparition progressive des blocs des pages menus */
+
+/* Animation de la coche des menus */
+
+@keyframes check_apparition{
+    0%{
+        opacity: 0;
+        width: 0%;
+    }
+    100%{
+        opacity: 1;
+        width: 65px;
+    }
+}
+
+@keyframes icon_rotation{
+    0%{
+        transform: rotate(0turn);
+    }
+    100%{
+        transform: rotate(1turn);
+    }
+}
+
+.entrees_bloc:hover {
+    .entrees_bloc_bottom{
+        transform: translateX(-60px);
+        transition: all 1500ms linear;
+    }
+    .entrees_bloc-check{
+        animation: check_apparition 1500ms linear;
+        animation-fill-mode: forwards;
+    }
+    .fa-solid{
+        animation: icon_rotation 1500ms linear;
+    }
+    .entrees_bloc_text{
+        width: 70%;
+        transition: width 1500ms;
+    }
+}
+
+.plats_bloc:hover {
+    .plats_bloc_bottom{
+        transform: translateX(-60px);
+        transition: all 1500ms linear;
+    }
+    .plats_bloc-check{
+        animation: check_apparition 1500ms linear;
+        animation-fill-mode: forwards;
+    }
+    .fa-solid{
+        animation: icon_rotation 1500ms linear;
+    }
+    .plats_bloc_text{
+        width: 70%;
+        transition: width 1500ms;
+    }
+}
+
+.desserts_bloc:hover {
+    .desserts_bloc_bottom{
+        transform: translateX(-60px);
+        transition: all 1500ms linear;
+    }
+    .desserts_bloc-check{
+        animation: check_apparition 1500ms linear;
+        animation-fill-mode: forwards;
+    }
+    .fa-solid{
+        animation: icon_rotation 1500ms linear;
+    }
+    .desserts_bloc_text{
+        width: 70%;
+        transition: width 1500ms;
+    }
+}
+
+
+/* Fin de l'animation de la coche des menus */
