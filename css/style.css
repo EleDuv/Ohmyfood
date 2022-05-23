@@ -415,9 +415,6 @@ img {
 
 /* Fin de l'animation du loader */
 /* Animation des liens du bloc "fonctionnement" */
-.intro_all_link:hover {
-  transition: all, 450ms;
-}
 .intro_all_link:hover .intro_all_bloc {
   background-color: rgb(242, 236, 250);
 }
@@ -986,7 +983,7 @@ img {
     gap: 37px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1441px) {
   .card_figure {
     width: 335px;
   }
