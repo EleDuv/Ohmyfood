@@ -34,6 +34,7 @@
         gap: 16px;
         &_link{
             text-decoration: none;
+            transition: all, 450ms;
         }
         &_bloc{
             display: flex;
@@ -46,7 +47,7 @@
             width: 294px;
             margin: auto;
             padding: 19px;
-            transition: all, 450ms;
+            
         }
         p{
         position: absolute;

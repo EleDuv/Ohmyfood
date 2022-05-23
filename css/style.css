@@ -803,6 +803,7 @@ img {
 }
 .intro_all_link {
   text-decoration: none;
+  transition: all, 450ms;
 }
 .intro_all_bloc {
   display: flex;
@@ -815,7 +816,6 @@ img {
   width: 294px;
   margin: auto;
   padding: 19px;
-  transition: all, 450ms;
 }
 .intro_all p {
   position: absolute;
